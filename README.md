@@ -39,4 +39,16 @@ Some materials above (like the parachord, acrylic, and switches) are up to the u
 I know the switches are PCB monuted on a plate build. I did this becaause I want the remaining PCB mounted switches for future projects and the BULK order price would have been cut if I got plate mounted.
 
 ## Phase 1 - Case structure
-//TODO dont be lazy and complete this
+In terms of the case, all of my research has led me to the famous "Sandwich" case. This case basically has a bunch of layers that are laser cut to make a complete aparatus for your Switches and/or PCB.
+
+### Sandwich Case details
+The case consists of the following layers:
+* Top Layer: The top layer is the border that covers the switch layer. This can be any height that is below the keycap height.
+* Switch Layer: The switch layer has to be 1.5mm to 1.0mm in order for the cherry switches to properly clip onto the layer.
+* Spacers: Currently, the research I have conducted shows that 15.0mm of spacers seems to be a comfortable balance for room for wires and the PCB. Keep in mind these layers will be hosting the cable connection for the keyboard.
+* Bottom Layer: This laayer can be as thick as you want.
+
+### Materials
+* Acrylic: Popular, cost effective, could flex but thicker layers and proper engineering can reduce this.
+* Wood: Why...just dont
+* Metal: if you have the money, then sure this is a great material!
