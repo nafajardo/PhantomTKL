@@ -5,7 +5,7 @@ Repository for my Mechanical Keyboard project.
 Nicholas Fajardo.
 Mechanical keyboard enthusiast extraordinaire. My [email](nafajardo15@gmail.com).
 
-### Required materials and resources
+## Required materials and resources
 Resources:
 * Time
 * ~$150
@@ -39,4 +39,25 @@ Some materials above (like the parachord, acrylic, and switches) are up to the u
 I know the switches are PCB monuted on a plate build. I did this becaause I want the remaining PCB mounted switches for future projects and the BULK order price would have been cut if I got plate mounted.
 
 ## Phase 1 - Case structure
-//TODO dont be lazy and complete this
+In terms of the case, all of my research has led me to the famous "Sandwich" case. This case basically has a bunch of layers that are laser cut to make a complete aparatus for your Switches and/or PCB.
+
+### Sandwich Case details
+The case consists of the following layers:
+* Top Layer: The top layer is the border that covers the switch layer. This can be any height that is below the keycap height.
+* Switch Layer: The switch layer has to be 1.5mm to 1.0mm in order for the cherry switches to properly clip onto the layer.
+* Spacers: Currently, the research I have conducted shows that 15.0mm of spacers seems to be a comfortable balance for room for wires and the PCB. Keep in mind these layers will be hosting the cable connection for the keyboard.
+* Bottom Layer: This layer can be as thick as you want.
+
+### Materials
+* Acrylic: Popular, cost effective, could flex but thicker layers and proper engineering can reduce this.
+* Wood: Good for prototyping, bit I do not reccomend it for a final product.
+* Metal: if you have the money, then sure this is a great material!
+
+### How to make the case
+I generated my specific case by using [Keyboard layout generator](http://www.keyboard-layout-editor.com/#/) and [CAD 2D sandwich case generator](http://builder.swillkb.com/). You first go to Keyboard Layout editor, and generate your configuration. Once that is done, copy and paste the raw data into the CAD 2D sandwich case generator and set your settings. In my case, I put a bit of a border, anad set kerf to .05 since thats the specification of the laser cutter I will be using.
+
+Once you have this done, make a DWG file ready with all the parts laid out to cut. For me, I needed to make the parts on aa 24x18 sized sheet for all laayers except the switch layer. And then I made the switch laayer on a 12x24 piece of 1.5mm thick acrylic to match the clip mechanism specs on a Cherry MX switch. You can find more details on this [here](http://cherryamericas.com/product/mx-series-2/).
+
+After cutting your pieces, you should have an assembly ready. The design I maade calls for 8 M3 screws to fasten the case. I bought [Countersink Screws](https://www.amazon.com/gp/product/B01D9HIVNS/ref=od_aui_detailpages00?ie=UTF8&psc=1) and [nuts](https://www.amazon.com/gp/product/B01IWUSDYY/ref=od_aui_detailpages00?ie=UTF8&psc=1) because the thickness of my case, in total, is 25 (24.85)mm.
+
+In terms of angle, I am going to be installing some mechanisms after the keyboard is done that will allow me to dynamically change the position of the keyboard. This will not be part of the main phases.
