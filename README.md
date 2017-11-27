@@ -1,4 +1,4 @@
-# PhantomTKL
+# PhantomTKL - THIS IS STILL IN PROGRESS =D
 Repository for my Mechanical Keyboard Project. 
 
 ## About the author
@@ -77,6 +77,36 @@ Once you have this done, make a DWG file ready with all the parts laid out to cu
 
 After cutting your pieces, you should have an assembly ready. The design I made calls for 8 M3 screws to fasten the case. I bought [Countersink Screws](https://www.amazon.com/gp/product/B01D9HIVNS/ref=od_aui_detailpages00?ie=UTF8&psc=1) and [nuts](https://www.amazon.com/gp/product/B01IWUSDYY/ref=od_aui_detailpages00?ie=UTF8&psc=1) because of my case dimensions.
 
-I am making 5 layers of .1875" thick acrylic, and one layer of .06" acrylic. This leads to a total of 25.34 mm of thickness. The nuts are 2.25 mm thick, so we have a leftover of 2.4 mm of screw at the bottom. II plan on 
+I am making 5 layers of .1875" thick acrylic, and one layer of .06" acrylic. This leads to a total of 25.34 mm of thickness. The nuts are 2.25 mm thick, so we have a leftover of 2.4 mm of screw at the bottom. So far, I will probably install some rubber feet here similar to [this](http://www.mocap.com/threaded-plastic-caps-for-metric-threads.html) if I can find it in 3mm.
 
-In terms of angle, I am going to be installing some mechanisms after the keyboard is done that will allow me to dynamically change the position of the keyboard. This will not be part of the main phases.
+In terms of angle, I am going to be installing some mechanisms after the keyboard is done that will allow me to dynamically change the position of the keyboard. This will not be part of the main phases, so dont worry about it right now.
+
+## Phase 2 - Soldering your ass off
+You are gonna have to solder SO MUCH, so get a place with good ventilation, alot of solder, a good iron, and a voltmeter to fix those happy mistakes.
+
+Here is the order we are going in:
+* Diodes
+* Testing
+* Teensy
+* Testing
+* Switches
+* Testing
+* LEDs
+
+Notice that testing is mentioned three times =0
+
+So for the diodes, we have to make sure that they are facing the right way. Each spot where the diodes are going to be soldered is going to have a square and a circle. The rule of thumb is to make sure that the black strip (if you got the diodes form where I got them) is closer to the square part of the terminals. 
+
+Now test each connection, so we can make sure it works correctly. You can do this by using a multimeter.
+
+//TODO put pics for testing and diode direction
+
+Alright, for the Teensy, alight it like so:
+
+//TODO put pic of teensy on PCB with headers already on the teensy.
+
+Now for the switches. We are going to put four or five switches in each corner of the plate layer, and then put that onto the PCB. This will let us make sure that the switches are aligned, and makes the process of combining the switch layer and the PCB layer easier.
+
+//TODO put pictures of switch layer with first couple of switches soldered.
+
+Once this is done, use the teensy to test. 
