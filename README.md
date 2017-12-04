@@ -111,4 +111,11 @@ Now for the switches. We are going to put four or five switches in each corner o
 
 Once this is done, use the teensy to test by putting in the program and hoping that each key works. You can go to [this](http://www.keyboardtester.com/) to test.
 
+### Phase 3
+//TODO Costar stabilizer guide
+
 After this, make any visual changes! I put some divots for the holes that the screws go in, sice the screws that I am using have a countersink.
+
+//TODO adress flexing while lasercutting issues with thin Acrylic
+//TODO put mini secion on angle adjustment 3D printed mechanisms
+//TODO formal conclusion
