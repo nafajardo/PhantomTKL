@@ -1,4 +1,4 @@
-# PhantomTKL - THIS IS STILL IN PROGRESS =D
+# PhantomTKL
 Repository for my Mechanical Keyboard Project. 
 
 ## About the author
@@ -101,7 +101,7 @@ Now test each connection, so we can make sure it works correctly. You can do thi
 
 //TODO put pics for testing and diode direction
 
-Alright, for the Teensy, alight it like so:
+Alright, for the Teensy, alight it like so, and solder:
 
 //TODO put pic of teensy on PCB with headers already on the teensy.
 
@@ -109,4 +109,6 @@ Now for the switches. We are going to put four or five switches in each corner o
 
 //TODO put pictures of switch layer with first couple of switches soldered.
 
-Once this is done, use the teensy to test. 
+Once this is done, use the teensy to test by putting in the program and hoping that each key works. You can go to [this](http://www.keyboardtester.com/) to test.
+
+After this, make any visual changes! I put some divots for the holes that the screws go in, sice the screws that I am using have a countersink.
