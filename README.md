@@ -1,5 +1,5 @@
 # PhantomTKL
-Repository for my Mechanical Keyboard Project. 
+Repository for my Mechanical Keyboard Project.
 
 ## About the author
 Nicholas Fajardo.
@@ -14,7 +14,7 @@ Resources:
 * Laser Cutter
 * 3D Printer
 
-Software: 
+Software:
 * Soldiworks (or a suitable CAD program to view/edit files)
 * [Keyboard layout generator](http://www.keyboard-layout-editor.com/#/)
 * [CAD 2D sandwich case generator](http://builder.swillkb.com/)
@@ -45,16 +45,16 @@ Hardware used in my build:
 
 Hardware that can be added/substituded:
 * [Holtite](http://winkeyless.kr/product/holtite/)
-* Any M3 bolts if you dont want countersinks
-* Any Cherry MX/Gateron switches can be substituted and/or replaced
-* Any material choice I make can be substituded
+* Any M3 bolts if you do not want countersinks
+* Any CherryMX/Gateron switches can be substituted and/or replaced
+* Any material choice I make can be substituted
 
 ### Notes on Required Materials
 You can get 90 switches at the link above for $49.5 dollars, or 100 for $50. Spend the extra 50 cents.
-I know the switches are PCB monuted on a plate build. I did this because I want the remaining PCB mounted switches for future projects and the BULK order price would have been cut if I got plate mounted. In order to convert PCB mounted to Plate mounted, you have to cut/pry off the two plastic tabs on the bottom.
+I know the switches are PCB mounted on a plate build. I did this because I want the remaining PCB mounted switches for future projects and the BULK order price would have been cut if I got plate mounted. In order to convert PCB mounted to Plate mounted, you have to cut/pry off the two plastic tabs on the bottom.
 
 ## Phase 1 - Case structure
-In terms of the case, all of my research has led me to the famous "Sandwich" case. This case basically has a bunch of layers that are laser cut to make a complete aparatus for your Switches and PCB.
+In terms of the case, all of my research has led me to the famous "Sandwich" case. This case basically has a bunch of layers that are laser cut to make a complete apparatus for your Switches and PCB.
 
 ### Sandwich Case details
 The case consists of the following layers:
@@ -86,36 +86,34 @@ You are gonna have to solder SO MUCH, so get a place with good ventilation, alot
 
 Here is the order we are going in:
 * Diodes
-* Testing
 * Teensy
-* Testing
 * Switches
-* Testing
 * LEDs
 
-Notice that testing is mentioned three times =0
+So for the diodes, we have to make sure that they are facing the right way. Each spot where the diodes are going to be soldered is going to have a square and a circle. The rule of thumb is to make sure that the black strip (if you got the diodes form where I got them) is closer to the square part of the terminals.
 
-So for the diodes, we have to make sure that they are facing the right way. Each spot where the diodes are going to be soldered is going to have a square and a circle. The rule of thumb is to make sure that the black strip (if you got the diodes form where I got them) is closer to the square part of the terminals. 
-
-Now test each connection, so we can make sure it works correctly. You can do this by using a multimeter.
-
-//TODO put pics for testing and diode direction
-
-Alright, for the Teensy, alight it like so, and solder:
-
-//TODO put pic of teensy on PCB with headers already on the teensy.
+The Teensy must be placed with male to male headers soldered onto the actual logic board.
 
 Now for the switches. We are going to put four or five switches in each corner of the plate layer, and then put that onto the PCB. This will let us make sure that the switches are aligned, and makes the process of combining the switch layer and the PCB layer easier.
 
-//TODO put pictures of switch layer with first couple of switches soldered.
+Once this is done, the soldering is finished!
 
-Once this is done, use the teensy to test by putting in the program and hoping that each key works. You can go to [this](http://www.keyboardtester.com/) to test.
+## Phase 3 - Code Upload and Testing
+First, depending on your system, you must download the correct [drivers/compiler](https://www.pjrc.com/teensy/loader.html) for the Teensy board. Once you do this,
 
-### Phase 3
-//TODO Costar stabilizer guide
+use the Teensy to test by putting in your [custom key mapping](https://www.pjrc.com/teensy/usb_keyboard.html) and hoping that each key works. You can go to [this](http://www.keyboardtester.com/) to test.
 
-After this, make any visual changes! I put some divots for the holes that the screws go in, sice the screws that I am using have a countersink.
 
-//TODO adress flexing while lasercutting issues with thin Acrylic
-//TODO put mini secion on angle adjustment 3D printed mechanisms
-//TODO formal conclusion
+## Phase 4 - Miscellaneous Topics
+Depending on the application, stabilizers might be a good or bad idea. In my specific applicaiton, costars were the best choice, but cherry stabilizers might be better for tighter fits.
+
+After this, make any visual changes! I put some divots for the holes that the screws go in, since the screws that I am using have a countersink.
+
+The acrylic that I used for the switch layer warped during the laser cutting process. This can be avoided by using a thicker material, or using metal. Be warned that thicker material will not allow cherry switches to latch on, which might be a problem for your' certain application.
+
+## Conclusion
+This project was not only fun for me, but it was a great experience in general for laser cutting, C programming, micro processor interaction, CAD drawing, and general ergonomic design. My keyboard came out very nice, and to this day it still holds up!
+
+I wish you luck on your journey through mechanical keyboards, and please email me with any questions!
+
+Nick
